@@ -9,8 +9,6 @@ namespace Api.DapperTransaction.BLL.Services.Interfaces
 {
 	public interface IPessoaBLL
 	{
-		IEnumerable<PessoaMOD> Get();
-		PessoaMOD Get(int codigo);
 		int Save(PessoaMOD pessoa);
 	}
 }

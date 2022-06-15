@@ -18,15 +18,6 @@ namespace Api.DapperTransaction.BLL.Services
 			_parentescoRepository = parentencoRepository;
 		}
 
-		public IEnumerable<ParentescoMOD> Get()
-		{
-			return _parentescoRepository.Get();
-		}
-
-		public ParentescoMOD Get(int codigo)
-		{
-			return _parentescoRepository.Get(codigo);
-		}
 
 		public bool Save(ParentescoMOD parentesco)
 		{

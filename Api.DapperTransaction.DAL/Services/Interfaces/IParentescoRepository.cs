@@ -9,8 +9,6 @@ namespace Api.DapperTransaction.DAL.Services.Interfaces
 {
 	public interface IParentescoRepository
 	{
-		IEnumerable<ParentescoMOD> Get();
-		ParentescoMOD Get(int codigo);
 		bool Save(ParentescoMOD parentesco);
 	}
 }

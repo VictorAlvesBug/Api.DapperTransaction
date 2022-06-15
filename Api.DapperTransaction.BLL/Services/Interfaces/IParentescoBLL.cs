@@ -9,8 +9,6 @@ namespace Api.DapperTransaction.BLL.Services.Interfaces
 {
 	public interface IParentescoBLL
 	{
-		IEnumerable<ParentescoMOD> Get();
-		ParentescoMOD Get(int codigo);
 		bool Save(ParentescoMOD parentesco);
 	}
 }

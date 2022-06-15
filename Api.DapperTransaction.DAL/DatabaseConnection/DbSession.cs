@@ -13,8 +13,12 @@ namespace Api.DapperTransaction.DAL.DatabaseConnection
 		public IDbConnection Connection { get; set; }
 		public IDbTransaction Transaction { get; set; }
 
-		public DbSession()
+		public string guid { get; set; }
+
+	public DbSession()
 		{
+			guid = Guid.NewGuid().ToString();
+
 			string banco = "master";
 
 			string ip = Environment.GetEnvironmentVariable("DB_ADDRESS");

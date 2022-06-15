@@ -22,19 +22,6 @@ namespace Api.DapperTransaction.Controllers
 			_unitOfWork = unitOfWork;
 		}
 
-		[HttpGet]
-		public IActionResult Get()
-		{
-			try
-			{
-				return Ok(_pessoaBLL.Get());
-			}
-			catch (Exception)
-			{
-				return BadRequest();
-			}
-		}
-
 		[HttpPost]
 		public IActionResult Post([FromBody] PessoaMOD pessoa)
 		{

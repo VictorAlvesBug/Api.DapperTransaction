@@ -17,15 +17,6 @@ namespace Api.DapperTransaction.BLL.Services
 			_parentescoRepository = parentescoRepository;
 		}
 
-		public IEnumerable<PessoaMOD> Get()
-		{
-			return _pessoaRepository.Get();
-		}
-
-		public PessoaMOD Get(int codigo)
-		{
-			return _pessoaRepository.Get(codigo);
-		}
 
 		public int Save(PessoaMOD pessoa)
 		{
